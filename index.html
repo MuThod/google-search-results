@@ -11,7 +11,9 @@
         <header>
             <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt=""/>
             <div id="search-bar">
-
+				<input type="text" id="search" name="search">
+				<div><a href="" class="material-icons search-icon">mic</a></div>
+				<label for="search"><span class="material-icons search-icon">search</span></label>
             </div>
             <div id="services">
                 <ul>
@@ -23,24 +25,35 @@
         <main>
             <div id="shortcuts">
                 <ul>
-                    <li class="button shortcuts-button"><span class="material-icons shortcuts-icon">search</span>Tous</li>
-                    <li class="button shortcuts-button"><span class="material-icons shortcuts-icon">article</span>Actualités</li>
-                    <li class="button shortcuts-button"><span class="material-icons shortcuts-icon">place</span>Maps</li>
-                    <li class="button shortcuts-button"><span class="material-icons shortcuts-icon">slideshow</span>Vidéos</li>
-                    <li class="button shortcuts-button"><span class="material-icons shortcuts-icon">local_offer</span>Shopping</li>
-                    <li class="button shortcuts-button"><span class="material-icons shortcuts-icon">more_vert</span>Plus</li>
+                    <li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">search</span> Tous</a></li>
+                    <li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">article</span> Actualités</a></li>
+                    <li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">place</span> Maps</a></li>
+                    <li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">slideshow</span> Vidéos</a></li>
+                    <li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">local_offer</span> Shopping</a></li>
+                    <li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">more_vert</span> Plus</a></li>
                 </ul>
                 <ul>
-
+					<li class="button"><a href="" class="shortcuts-button">Paramètres</a></li>
+					<li class="button"><a href="" class="tool-button">Outils</a></li>
                 </ul>
-                <p id="total-results">Environ 82 100 000 résultats (0,48 secondes)</p>
             </div>
             <div id="search-results">
+				<p id="total-results">Environ 82 100 000 résultats (0,48 secondes)</p>
                 <div id="top-result">
 
                 </div>
                 <div class="result">
-
+					<div class="result-header">
+						<div class="result-info">
+							<p class="result-adress">www.buildthis.io > make-a-website</p>
+							<div class="material-icons button">arrow_drop_down</div>
+							<p class="translate"><a href="">Traduire cette page</a></p>
+						</div>
+						<p class="result-link"><a href="">How to Build A Website: A to Z Beginner Guide - BuildThis.io</a></p>
+					</div>
+					<div class="result-summary">
+						<p><time datetime="2020-04-21">21 avr. 2020 - </time> In this article, I will show you the essential steps in creating a website. Register a domain name; Signup for a web hosting; Design your ...</p>
+					</div>
                 </div>
                 <div id="videos">
                     <div class="video">
@@ -57,7 +70,8 @@
         </main>
         <footer>
             <div id="location">
-
+				<p id="language">France</p>
+				<p><span class="material-icons"></span>Sur Terre - <a href="">D'après vos adresses (domicile)</a> - <a href="">Utiliser la position exacte</a> - <a href="">En savoir plus</a></p>
             </div>
             <div id="contact-links">
                 <ul>

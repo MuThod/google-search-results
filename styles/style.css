@@ -1,4 +1,167 @@
+body {
+	margin: 0px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 20px 0px 0px 0px;
+}
+
+main {
+	max-width: 660px;
+	margin: 0px auto 0px 170px;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+	color: initial;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.button {
+	padding: 0px 5px;
+	margin: 0px;
+}
+
+.services-button {
+	color: black;
+}
+
+.services-button:visited {
+	color: black;
+}
+
+.services-button:hover {
+	color: hsl(216, 15%, 35%);
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+}
+
+.result-header {
+	display: flex;
+	flex-direction: column;
+}
+
+.result-info {
+	display: flex;
+	flex-direction: row;
+}
+
+.search-icon {
+	margin: 4px 6px;
+    padding: 4px 4px 4px 4px;
+	color: hsl(216, 15%, 60%);
+}
+
+.search-icon:hover {
+	text-decoration: none;
+}
+
+.shortcuts-button {
+	color: hsl(216, 15%, 30%);
+    display: flex;
+    flex-direction: row;
+	align-items: center;
+}
+
+.button {
+	margin: 0px 7px 0px 8px;
+}
+
+.button:nth-child(1) {
+	margin: 0px 7px 0px 0px;
+}
+
+.button:nth-last-child(1) {
+	margin: 0px 0px 0px 8px;
+}
+
+.shortcuts-button:hover {
+	text-decoration: none;
+}
+
+.shortcuts-button:visited {
+	text-decoration: none;
+	color:  hsl(216, 15%, 30%);
+}
+
+.shortcuts-icon {
+	font-size: 18px;
+    padding: 0px 5px 0px 0px;
+}
+
+#search-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 2px;
+	margin: 0px auto 0px 0px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: hsl(216, 15%, 90%);
+	border-radius: 30px;
+	width: 670px;
+	height: 40px;
+}
+
+#search-bar:hover {
+	box-shadow: 0.1em 0.1em 0.3em hsl(216, 15%, 80%), 0.05em 0.05em 0.1em hsl(216, 15%, 90%);
+}
+
+#search {
+	font-size: 1.5em;
+	width: 600px;
+	padding: 0px;
+    border-width: 0px;
+	margin: 0px 0px 0px 20px;
+}
+
+#search:focus {
+	outline-style: none;
+}
+
+#services {
+	margin: 0px 22px;
+	align-items: center;
+}
+
 #logo {
-    margin: 20px;
-    width: 100px;
+    margin: 0px 40px 0px 30px;
+    width: 90px;
+}
+
+#shortcuts {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 25px 0px 15px 0px;
+	font-size: 12px;
+}
+
+#language {
+	padding: 10px 10px 10px 15px;
+	margin: 0px;
+	border-color: hsl(216, 15%, 90%);
+	border-style: solid none solid none;
+	border-width: 1px;
 }
