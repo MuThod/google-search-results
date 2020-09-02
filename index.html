@@ -9,10 +9,10 @@
     </head>
     <body>
         <header>
-            <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt=""/>
+            <p id="logo"><a href=""><img id="logo-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Afficher la page d'accueil Google"/></a></p>
             <div id="search-bar">
 				<input type="text" id="search" name="search">
-				<div><a href="" class="material-icons search-icon">mic</a></div>
+				<div><a href="" class="material-icons search-icon" id="voice-search-icon">mic</a></div>
 				<label for="search"><span class="material-icons search-icon">search</span></label>
             </div>
             <div id="services">
@@ -21,22 +21,20 @@
                     <li class="button"><a class="services-button" href="">Connection</a></li>
                 </ul>
             </div>
+			<ul id="shortcuts">
+				<li class="button"><a  href="" class="shortcuts-button" id="active"><span class="material-icons shortcuts-icon">search</span> Tous</a></li>
+				<li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">article</span> Actualités</a></li>
+				<li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">place</span> Maps</a></li>
+				<li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">slideshow</span> Vidéos</a></li>
+				<li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">local_offer</span> Shopping</a></li>
+				<li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">more_vert</span> Plus</a></li>
+			</ul>
+			<ul id="tools">
+				<li class="button"><a href="" class="shortcuts-button">Paramètres</a></li>
+				<li class="button"><a href="" id="tool-button">Outils</a></li>
+			</ul>
         </header>
         <main>
-            <div id="shortcuts">
-                <ul>
-                    <li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">search</span> Tous</a></li>
-                    <li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">article</span> Actualités</a></li>
-                    <li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">place</span> Maps</a></li>
-                    <li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">slideshow</span> Vidéos</a></li>
-                    <li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">local_offer</span> Shopping</a></li>
-                    <li class="button"><a  href="" class="shortcuts-button"><span class="material-icons shortcuts-icon">more_vert</span> Plus</a></li>
-                </ul>
-                <ul>
-					<li class="button"><a href="" class="shortcuts-button">Paramètres</a></li>
-					<li class="button"><a href="" class="tool-button">Outils</a></li>
-                </ul>
-            </div>
             <div id="search-results">
 				<p id="total-results">Environ 82 100 000 résultats (0,48 secondes)</p>
                 <div id="top-result">

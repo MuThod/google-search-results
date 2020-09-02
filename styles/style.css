@@ -1,18 +1,33 @@
 body {
 	margin: 0px;
 	font-family: 'Noto Sans', sans-serif;
+	display: grid;
+	grid-template-columns: 170px 665px 1fr;
+	grid-template-rows: auto 1fr 80px;
+	grid-template-areas: "head head head"". search-results .""foot foot foot";
+	margin: 0px;
 }
 
 header {
+	grid-area: head;
+	display: grid;
+	grid-template-columns: 170px 490px 175px 1fr;
+	grid-template-rows: 65px 55px;
+	grid-template-areas: "logo search-bar . account"". shortcuts tools .";
+	margin: 0px;
+	border-color: hsl(216, 15%, 90%);
+	border-style: none none solid none;
+	border-width: 1px;
+}
+
+footer {
+	grid-area: foot;
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin: 20px 0px 0px 0px;
+	flex-direction: column;
 }
 
 main {
-	max-width: 660px;
-	margin: 0px auto 0px 170px;
+	grid-area: search-results;
 }
 
 ul {
@@ -82,18 +97,7 @@ a:hover {
     display: flex;
     flex-direction: row;
 	align-items: center;
-}
-
-.button {
-	margin: 0px 7px 0px 8px;
-}
-
-.button:nth-child(1) {
-	margin: 0px 7px 0px 0px;
-}
-
-.button:nth-last-child(1) {
-	margin: 0px 0px 0px 8px;
+	padding: 0px;
 }
 
 .shortcuts-button:hover {
@@ -111,16 +115,17 @@ a:hover {
 }
 
 #search-bar {
+	grid-area: search-bar;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	padding: 2px;
-	margin: 0px auto 0px 0px;
+	margin: 20 auto 0px 0px;
 	border-width: 1px;
 	border-style: solid;
 	border-color: hsl(216, 15%, 90%);
 	border-radius: 30px;
-	width: 670px;
+	width: 675px;
 	height: 40px;
 }
 
@@ -140,22 +145,89 @@ a:hover {
 	outline-style: none;
 }
 
+#voice-search-icon {
+	margin: 4px 6px 4px 0px;
+    padding: 4px 4px 4px 10px;
+	border-color: hsl(216, 15%, 90%);
+	border-style: none none none solid;
+	border-width: 1px
+}
+
 #services {
-	margin: 0px 22px;
+	grid-area: account;
+	margin: auto 22px 0px auto;
 	align-items: center;
 }
 
 #logo {
-    margin: 0px 40px 0px 30px;
-    width: 90px;
+	grid-area: logo;
+    margin: 28px auto 0px 25px;
+    width: auto;
+}
+
+#logo-img {
+	width: 92px;
 }
 
 #shortcuts {
+	grid-area: shortcuts;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 25px 0px 15px 0px;
+	margin: auto 0px 12px 0px;
 	font-size: 12px;
+}
+
+#active {
+	color: #1a73e8;
+	border-width: 2px;
+	border-color: #1a73e8;
+	border-style: none none solid none;
+}
+
+#tools {
+	grid-area: tools;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin: auto 0px 12px 0px;
+	font-size: 12px;
+}
+
+#tool-button {
+	padding: 5px 12px;
+    margin: 0px;
+    color: hsl(216, 15%, 30%);
+	border-radius: 2px;
+    border-color: hsl(216,15%, 100%);
+    border-style: solid;
+    border-width: 1px;
+}
+
+#tool-button:hover {
+	text-decoration: none;
+    border-radius: 2px;
+    border-color: hsl(216,15%, 80%);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 1px 1px hsl(216, 15%, 78%);
+    background-color: hsl(216, 15%, 96%);
+}
+
+
+}
+
+#tool-button:visited {
+	color:  hsl(216, 15%, 30%);
+}
+
+#search-results {
+	
+}
+
+#location {
+	display: flex;
+	flex-direction: row;
 }
 
 #language {
