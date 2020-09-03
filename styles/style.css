@@ -2,7 +2,7 @@ body {
 	margin: 0px;
 	font-family: 'Noto Sans', sans-serif;
 	display: grid;
-	grid-template-columns: 170px 665px 1fr;
+	grid-template-columns: 170px 685px 1fr;
 	grid-template-rows: auto 1fr 80px;
 	grid-template-areas: "head head head"". search-results .""foot foot foot";
 	margin: 0px;
@@ -11,7 +11,7 @@ body {
 header {
 	grid-area: head;
 	display: grid;
-	grid-template-columns: 170px 490px 175px 1fr;
+	grid-template-columns: 170px 490px 195px 1fr;
 	grid-template-rows: 65px 55px;
 	grid-template-areas: "logo search-bar . account"". shortcuts tools .";
 	margin: 0px;
@@ -24,10 +24,14 @@ footer {
 	grid-area: foot;
 	display: flex;
 	flex-direction: column;
+	font-size: 14px;
+	background-color: hsl(216, 17%, 97%);
+	color: hsl(216, 15%, 50%);
 }
 
 main {
 	grid-area: search-results;
+	margin-left: 10px;
 }
 
 ul {
@@ -42,8 +46,13 @@ li {
 	color: initial;
 }
 
+p {
+	margin: 0px;
+}
+
 a {
 	text-decoration: none;
+	color: hsl(214, 82%, 40%);
 }
 
 a:hover {
@@ -56,30 +65,7 @@ a:hover {
 }
 
 .services-button {
-	color: black;
-}
-
-.services-button:visited {
-	color: black;
-}
-
-.services-button:hover {
-	color: hsl(216, 15%, 35%);
-}
-
-.result {
-	display: flex;
-	flex-direction: column;
-}
-
-.result-header {
-	display: flex;
-	flex-direction: column;
-}
-
-.result-info {
-	display: flex;
-	flex-direction: row;
+	margin-left: 15px;
 }
 
 .search-icon {
@@ -97,7 +83,11 @@ a:hover {
     display: flex;
     flex-direction: row;
 	align-items: center;
-	padding: 0px;
+	margin: 0px;
+	padding: 0px 8px 10px 8px;
+	border-width: 3px;
+	border-color: white;
+	border-style: none none solid none;
 }
 
 .shortcuts-button:hover {
@@ -106,12 +96,88 @@ a:hover {
 
 .shortcuts-button:visited {
 	text-decoration: none;
-	color:  hsl(216, 15%, 30%);
+	color: hsl(216, 15%, 30%);
 }
 
 .shortcuts-icon {
 	font-size: 18px;
     padding: 0px 5px 0px 0px;
+}
+
+.active {
+	color: hsl(214, 82%, 51%);
+	border-color: hsl(214, 82%, 51%);
+}
+
+.active:visited {
+	color: hsl(214, 82%, 51%);
+}
+
+.result {
+	display: flex;
+	flex-direction: column;
+	width: 655px
+}
+
+.result-header {
+	display: flex;
+	flex-direction: column;
+}
+
+.result-info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 14px;
+}
+
+.result-url {
+	
+}
+
+.target {
+	color: hsl(216, 15%, 35%);
+}
+
+.translate {
+	
+}
+
+.result-link {
+	font-weight: normal;
+	margin: 4px 0px 3px 0px;
+}
+
+.result-summary {
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+
+.location-button {
+	color: hsl(216, 15%, 50%);
+}
+
+.location-button:visited {
+	color: hsl(216, 15%, 50%);
+}
+
+.location-button:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.links-button {
+	color: hsl(216, 15%, 50%);
+	margin: 0px 15px;
+}
+
+.links-button:visited {
+	color: hsl(216, 15%, 50%);
+}
+
+.links-button:hover {
+	text-decoration: none;
+	color: black;
 }
 
 #search-bar {
@@ -155,8 +221,41 @@ a:hover {
 
 #services {
 	grid-area: account;
-	margin: auto 22px 0px auto;
+	margin: auto 15px 3px auto;
+}
+
+#services>ul {
 	align-items: center;
+}
+
+#apps {
+	color: black;
+	padding: 7px;
+}
+
+#apps:visited {
+	color: black;
+}
+
+#apps:hover {
+	text-decoration: none;
+	color: hsl(216, 15%, 35%);
+	border-radius: 50%;
+	background-color: hsl(216, 15%, 96%);
+}
+
+#connect {
+	background-color: hsl(214, 82%, 55%);
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 3px;
+}
+
+#connect:hover {
+	text-decoration: none;
+	background-color: hsl(214, 81%, 54%);
+	box-shadow: 0 1px 2px 0 hsla(217, 89%, 61%, 0.3), 0 1px 3px 1px hsla(217, 89%, 61%, 0.15);
 }
 
 #logo {
@@ -174,15 +273,8 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin: auto 0px 12px 0px;
+	margin: auto 0px 0px 0px;
 	font-size: 12px;
-}
-
-#active {
-	color: #1a73e8;
-	border-width: 2px;
-	border-color: #1a73e8;
-	border-style: none none solid none;
 }
 
 #tools {
@@ -190,7 +282,7 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
-	margin: auto 0px 12px 0px;
+	margin: auto 0px 0px 0px;
 	font-size: 12px;
 }
 
@@ -214,11 +306,14 @@ a:hover {
     background-color: hsl(216, 15%, 96%);
 }
 
-
-}
-
 #tool-button:visited {
 	color:  hsl(216, 15%, 30%);
+}
+
+#total-results {
+	color:  hsl(216, 15%, 30%);
+	font-size: 14px;
+	margin: 14px 0px;
 }
 
 #search-results {
@@ -228,12 +323,28 @@ a:hover {
 #location {
 	display: flex;
 	flex-direction: row;
-}
-
-#language {
-	padding: 10px 10px 10px 15px;
+	align-items: center;
 	margin: 0px;
+	padding: 0px 10px 0px 155px;
 	border-color: hsl(216, 15%, 90%);
 	border-style: solid none solid none;
 	border-width: 1px;
+	height: 40px;
+}
+
+#language {
+	margin: 0px;
+	padding: 2px 15px;
+	border-color: hsl(216, 15%, 92%);
+	border-style: none solid none none;
+	border-width: 1px;
+}
+
+#change-location {
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+
+#contact-links {
+	padding: 10px 10px 10px 155px;
 }
