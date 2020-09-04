@@ -1,6 +1,6 @@
 body {
 	margin: 0px;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: arial, 'Noto Sans', sans-serif;
 	display: grid;
 	grid-template-columns: 170px 685px 1fr;
 	grid-template-rows: auto 1fr 80px;
@@ -34,6 +34,11 @@ main {
 	margin-left: 10px;
 }
 
+h2 {
+	font-size: 20px;
+	margin: 20px 0px 10px 0px;
+}
+
 ul {
 	display: flex;
 	flex-direction: row;
@@ -53,6 +58,15 @@ p {
 a {
 	text-decoration: none;
 	color: hsl(214, 82%, 40%);
+}
+
+em {
+	color: black;
+	font-style: normal;
+}
+
+video {
+	width: 100%;
 }
 
 a:hover {
@@ -116,7 +130,8 @@ a:hover {
 .result {
 	display: flex;
 	flex-direction: column;
-	width: 655px
+	width: 655px;
+	margin: 20px 0px 10px 0px;
 }
 
 .result-header {
@@ -136,11 +151,15 @@ a:hover {
 }
 
 .target {
-	color: hsl(216, 15%, 35%);
+	color: hsl(216, 15%, 45%);
 }
 
-.translate {
-	
+.target:visited {
+	color: hsl(216, 15%, 45%);
+}
+
+.target:hover {
+	text-decoration: none;
 }
 
 .result-link {
@@ -150,7 +169,132 @@ a:hover {
 
 .result-summary {
 	font-size: 14px;
-	margin-bottom: 25px;
+	margin-bottom: 5px;
+	line-height: 1.5;
+}
+
+.video {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 212px;
+	height: 300px;
+	border-radius: 5px;
+	border-color: hsl(216, 15%, 90%);
+	border-width: 1px;
+	border-style: solid;
+	margin: 0px 5px;
+}
+
+.video-title {
+	padding: 20px;
+	font-size: 16px;
+}
+
+.video-info {
+	padding: 0px 0px 20px 20px;
+	color: hsl(216, 15%, 45%);
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+.image-category {
+	font-size: 12px;
+	padding: 8px;
+	margin: 0px 5px 5px 5px;
+	border-radius: 20px;
+	border-color: hsl(216, 15%, 80%);
+	border-width: 1px;
+	border-style: solid;
+}
+
+.image-category:hover {
+	background-color: hsl(216, 15%, 98%);
+}
+
+.result-image {
+	border-color: hsl(216, 15%, 95%);
+	border-width: 1px;
+	border-style: solid;
+	margin: 5px;
+}
+
+.crop {
+	max-width: 181px;
+	height: 130px;
+	overflow: hidden;
+}
+
+.carousel {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 675px;
+}
+
+.more-button {
+	position: relative;
+	z-index: 0px;
+	padding: 8px;
+	border-radius: 50%;
+	border: 1px solid hsl(216, 15%, 90%);
+	color: hsl(216, 15%, 70%);
+	box-shadow: 2px 2px 2px hsl(216, 15%, 90%);
+	background-color: hsla(216, 15%, 98%, 95%);
+	margin: 0px 0px 0px -20px;
+}
+
+.more-button:visited {
+	color: hsl(216, 15%, 70%);
+}
+
+.more-button:hover {
+	text-decoration: none;
+	color: hsl(216, 15%, 55%);
+	background-color: hsla(216, 15%, 98%, 99%);
+}
+
+.aligned {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.column-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.other-question {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	color: black;
+	height: 40px;
+	padding: 0px 20px;
+	margin: auto 0px;
+	border-width: 1px;
+	border-color: hsl(216, 15%, 90%);
+	border-style: solid none none none;
+}
+
+.other-question:visited {
+	color: black;
+}
+
+.other-question:hover {
+	text-decoration: none;
+}
+
+.column-list>li {
+	height: 30px;
+	width: 300px;
+}
+
+.related-link:hover {
+	text-decoration: none;
 }
 
 .location-button {
@@ -178,6 +322,22 @@ a:hover {
 .links-button:hover {
 	text-decoration: none;
 	color: black;
+}
+
+#next-pages>li {
+	margin: 3px;
+}
+
+.google {
+	font-size: 20px;
+}
+
+.google:visited {
+	color: initial;
+}
+
+.google:hover {
+	text-decoration: none;
 }
 
 #search-bar {
@@ -320,6 +480,23 @@ a:hover {
 	
 }
 
+#videos-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#result-images {
+	margin: 20px 0px;
+}
+
+#result-images-add {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 5px 5px;
+}
+
 #location {
 	display: flex;
 	flex-direction: row;
@@ -347,4 +524,17 @@ a:hover {
 
 #contact-links {
 	padding: 10px 10px 10px 155px;
+}
+
+#other-questions {
+	border-radius: 8px;
+	border-width: 1px;
+	border-color: hsl(216, 15%, 90%);
+	border-style: solid;
+	margin: 20px 5px 10px 5px; 
+}
+
+#other-questions>h2 {
+	padding: 10px 20px;
+	margin: 0px;
 }
