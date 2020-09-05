@@ -1,6 +1,6 @@
 body {
 	margin: 0px;
-	font-family: arial, 'Noto Sans', sans-serif;
+	font-family: arial, sans-serif;
 	display: grid;
 	grid-template-columns: 170px 685px 1fr;
 	grid-template-rows: auto 1fr 80px;
@@ -154,10 +154,6 @@ a:hover {
 	color: hsl(216, 15%, 45%);
 }
 
-.target:visited {
-	color: hsl(216, 15%, 45%);
-}
-
 .target:hover {
 	text-decoration: none;
 }
@@ -267,6 +263,7 @@ a:hover {
 }
 
 .other-question {
+	width: auto;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -288,9 +285,10 @@ a:hover {
 	text-decoration: none;
 }
 
-.column-list>li {
-	height: 30px;
+.related-link {
+	display: block;
 	width: 300px;
+	height: 30px;
 }
 
 .related-link:hover {
@@ -324,20 +322,26 @@ a:hover {
 	color: black;
 }
 
-#next-pages>li {
-	margin: 3px;
-}
-
 .google {
-	font-size: 20px;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.google:visited {
-	color: initial;
+.g-blue {
+	color: #4285F4;
 }
 
-.google:hover {
-	text-decoration: none;
+.g-red {
+	color: #DB4437;
+}
+
+.g-yellow {
+	color: #F4B400;
+}
+
+.g-green {
+	color: #0F9D58;
 }
 
 #search-bar {
@@ -537,4 +541,18 @@ a:hover {
 #other-questions>h2 {
 	padding: 10px 20px;
 	margin: 0px;
+}
+
+#next-results {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#next-pages {
+	width: auto;
+}
+
+#next-pages>li {
+	margin: 3px;
 }
